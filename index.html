@@ -147,10 +147,10 @@
       const userAns = answerInput.value.trim();
       const correctAns = shuffledQuestions[current].answer.trim();
       if (userAns === correctAns) {
-        resultDiv.innerHTML = "✅ 正確！";
+        resultDiv.innerHTML = "<br>✅ 正確！<br>";
         correct++;
       } else {
-        resultDiv.innerHTML = `❌ 錯誤。正確答案：<br>${correctAns}`;
+        resultDiv.innerHTML = `<br>❌ 錯誤。正確答案：<br>${correctAns}<br>`;
       }
       answerInput.disabled = true;
       checkBtn.disabled = true;
