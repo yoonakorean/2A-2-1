@@ -60,6 +60,10 @@
       margin-bottom: 10px;
       color: #333;
     }
+    #result {
+      margin-top: 1em;   /* 上面留一行空白 */
+      margin-bottom: 1em; /* 下面留一行空白 */
+    }
   </style>
 </head>
 <body>
@@ -147,10 +151,10 @@
       const userAns = answerInput.value.trim();
       const correctAns = shuffledQuestions[current].answer.trim();
       if (userAns === correctAns) {
-        resultDiv.innerHTML = "<br>✅ 正確！<br>";
+        resultDiv.innerHTML = "✅ 正確！";
         correct++;
       } else {
-        resultDiv.innerHTML = `<br>❌ 錯誤。正確答案：<br>${correctAns}<br><br>`;
+        resultDiv.innerHTML = `❌ 錯誤。正確答案：<br>${correctAns}`;
       }
       answerInput.disabled = true;
       checkBtn.disabled = true;
